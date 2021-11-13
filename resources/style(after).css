@@ -1,0 +1,324 @@
+/*Universal*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+body {
+    height: 1vh;
+    max-width: 100%;
+}
+/*Header*/
+header {
+    position: fixed;
+    border-bottom: 1px solid #c6c1c1;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    height: 5.3125rem;
+    z-index: 1;
+    top: 0;
+}
+#logo {
+    display: flex;
+    width: fit-content;
+    margin: 0 1.875rem;
+    color:#4A4A4A;
+    font-size: 1.875rem;
+    align-items: center;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+nav a {
+    margin: 0 1.875rem;
+    color:#4A4A4A;
+    display: flex;
+    text-decoration: none;
+}
+a img {
+    height: 1.25rem;
+    width: auto;
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.button {
+    display: none;
+}
+.mobile {
+    display: none;
+}
+/*main*/
+main {
+    margin-top: 5.3125rem;
+    width: 100%;
+}
+/*Sign Up Section*/
+#sign-up-section {
+    background-image: url(./images/banner-landingpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 43.5rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div {
+    background-color: #9dc20a;
+    border: 1px solid #979797;
+    max-width: 36.875rem;
+    max-height: 22.25rem;
+    border-radius: 0.25rem;
+    margin: 10.625rem 6.25rem;
+    padding: 2rem 5rem 3.5rem 5rem;
+    color: white;
+    text-align: center;
+    flex-shrink: 1;
+}
+div h1 {
+    font-size: 2.25rem;
+    font-family: "Damion", cursive;
+}
+div h2 {
+    margin: 0.75rem auto;
+    font-size: 3.125rem;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+}
+div p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.625rem;
+}
+#button {
+    display: flex;
+    max-width: 26.75rem;
+    height: 4rem;
+    background-color: #4A4A4A;
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+/*Features Section*/
+#features-section {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 5%;
+}
+.feature {
+    height: 39.6875rem;
+    padding: 2rem;
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+#AAI {
+    margin-right: 2.375rem;
+}
+.features { /*The two pictures*/
+    min-height: 65%;
+    max-width: 100%;
+}
+figcaption{
+    margin-top: 2.5rem;
+    color: #4A4A4A;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 300;
+}
+figcaption h2 {
+    color: #4A4A4A;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+/*Filter Section*/
+#filters-section {
+    padding: 4rem 1%;
+    background-color: #4a4a4a;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+#filters-section h2 {
+    opacity: 100%;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+#filters-section p {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 5rem;
+}
+#filters {
+    display: flex;
+    flex: 1;
+}
+.filter {
+    max-width: 25%;
+}
+/*aside*/
+aside {
+    background-color: #f3f3f3;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+aside p {
+    font-family: "Palatino", serif;
+    font-size: 1.875rem;
+    line-height: 1.1;
+    font-style: italic;
+    color: #4a4a4a;
+    width: fit-content;
+    display: inline-block;
+}
+aside img {
+    display: inline-flex;
+    margin-left: 1.875rem;
+    max-height: 1.875rem;
+}
+/*Footer*/
+footer {
+    background-color: #9b9b9b;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3.875rem;
+    color: white;
+    align-items: center;
+}
+footer p {
+    display: flex;
+    width: 100%;
+    margin-left: 2rem;
+}
+#designed-in-NYC {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+/*fix for an issue with the feature section due to size of screen width in the range of 783px to 1000px*/
+@media only screen and (max-width: 1000px)  {
+    /*features-section*/
+    figcaption h2 {
+        font-size: 1.5rem;
+    }
+}
+/*design for tablet's screen*/
+@media only screen and (max-width: 800px) {
+    /*Header*/
+    #join-us {
+        display: flex;
+        padding: 0.1875rem 0.5rem;
+        background-color: #9dc20b;
+        border-radius: 4px;
+        height: 1.625rem;
+        margin-right: 1.875rem;
+        min-width: fit-content;
+        margin-top: 1.75rem;
+        text-decoration: none;
+        color: white;
+    }
+    nav a {
+        margin-left: 0;
+    }
+    /*sign-up-section*/
+    div {
+        background-color: transparent;
+        border: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div p {
+        display: none;
+    }
+    #button {
+        display: none;
+    }
+    div h2 {
+        width: max-content;
+    }
+    #sign-up-section {
+        justify-content: center;
+        align-items: center;
+    }
+    /*features-secton*/
+    figcaption h2 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    /*header*/
+    header  {
+        height: 3rem;
+        justify-content: space-around;
+        box-sizing: content-box;
+    }
+    #desktop {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        margin-top: 0.70rem;
+    }
+    #join-us {
+        margin-top: 0.70rem;
+        margin-right: 0;
+    }
+    /*main*/
+    main {
+        margin-top: 3rem;
+    }
+    /*features-section*/
+    #features-section {
+        padding-top: 1rem;
+        padding-bottom: 1.875rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    figure {
+        min-width: 100%;
+    }
+    /*filter-section*/
+    #hidden {
+        display: none;
+    }
+    .filter {
+        max-width: 33%;
+    }
+    /*aside*/
+    aside {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    /*footer*/
+    footer {
+        font-size: 0.625rem;
+    }
+}
